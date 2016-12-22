@@ -32,7 +32,7 @@ class Row
 
     public function attributes($attributes)
     {
-        $this->attributes = $attributes;
+        $this->attributes = array_merge($this->attributes, $attributes);
 
         return $this;
     }
